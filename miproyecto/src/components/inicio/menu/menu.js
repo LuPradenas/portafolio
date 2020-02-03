@@ -5,8 +5,9 @@ class Menu extends React.Component {
   state={menuOpen: false};
   toggleClass =() => {
     const menuSeccionOpenValue = ! this.state.menuOpen;
-    this.setState({isOpen:menuSeccionOpenValue
+    this.setState({menuOpen:menuSeccionOpenValue
     });
+  console.log(this.state.menuOpen)
   };
 render(){
 
@@ -19,7 +20,7 @@ render(){
     <div className="three"></div>
   </div>
   <div>
-		<ul className="hidden">
+		<ul className={!this.state.menuOpen ? 'hidden' : ''}>
 			<li><a href="/">work</a></li>
 			<li><a href="/">about</a></li>
 			<li><a href="/">resume</a></li>

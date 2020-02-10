@@ -1,5 +1,6 @@
 import React from 'react';
-import './menu.css';
+import  styles from './menu.module.scss';
+
 
 class Menu extends React.Component {
   state={menuOpen: false};
@@ -15,9 +16,9 @@ render(){
   <header>
 <div className="menu-section" onClick={this.toggleClass}>
   <div className="menu-toggle " >
-    <div className="one"></div>
-    <div className="two"></div>
-    <div className="three"></div>
+    <div className={styles.one}></div>
+    <div className={styles.two}></div>
+    <div className={styles.three}></div>
   </div>
   <div>
   <nav>

@@ -1,8 +1,9 @@
+/* eslint-disable class-methods-use-this */
 import React from 'react';
-import './about.css';
 import arbol from './arbol.svg';
+import './arbol.css';
 
-class About extends React.Component {
+class Arbol extends React.Component {
   render() {
     return (
       <div>
@@ -12,4 +13,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Arbol;

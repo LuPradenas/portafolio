@@ -15,7 +15,7 @@ render(){
   return (
   <header>
 <div className="menu-section" onClick={this.toggleClass}>
-  <div className="menu-toggle " >
+  <div className="menu-toggle " onClick={this.toggleClass} >
     <div className={styles.one}></div>
     <div className={styles.two}></div>
     <div className={styles.three}></div>

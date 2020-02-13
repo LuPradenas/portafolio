@@ -1,8 +1,8 @@
 $enlaces: #74C7A9;
+
 @mixin altoAncho ($alto, $ancho){
   height: $alto;
   width: $ancho;
-
 }
 @mixin centradoXY{
   display: flex;
@@ -11,7 +11,7 @@ $enlaces: #74C7A9;
   justify-content: center;
 }
 @media only screen and ( min-width: 1000px ) {
-.boxes .box {
+.box .box {
   width:100px;
   height:100px;
   border-radius:50px;
@@ -22,38 +22,41 @@ $enlaces: #74C7A9;
  z-index: 1000;
  
 }
-  .green {
-    background:#bcd16f;
+  .one{
+    background:#27ae60;
     @include altoAncho (45px, 45px);
         position: absolute;
         border-radius: 50%;
         border: 3px solid $enlaces;
         @include centradoXY;
         overflow: hidden;
-        top: 482%;
-        left: 87%;
+        top: 700%;
+        left: 70%;
+      
   }
-  .red {
-    background:#df8765;
+  .two{
+    background:#2980b9;
     @include altoAncho (45px, 45px);
         position: absolute;
         border-radius: 50%;
         border: 3px solid $enlaces;
         @include centradoXY;
         overflow: hidden;
-        top: 459%;
-        left: 78%;
+        top: 680%;
+        left: 83%;
+        
   }
 
-  .yellow {
-    background:#e097dd;
+  .three {
+    background:#f1c40f;
     @include altoAncho (45px, 45px);
         position: absolute;
         border-radius: 50%;
         border: 3px solid $enlaces;
         @include centradoXY;
         overflow: hidden;
-        top: 452%;
-        left: 63%;
-  }
+        top: 710%;
+        left: 54%;
+        
+}
 }

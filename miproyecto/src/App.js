@@ -3,6 +3,7 @@ import Inicio from './components/inicio/inicio';
 import Menu from './components/inicio/menu/menu';
 import Arbol from './components/inicio/arbol/arbol';
 import Work from './components/inicio/secciones/work';
+import About from './components/inicio/secciones/about';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Menu />
       <Arbol />
       <Work />
+      <About />
     </div>
   );
 }

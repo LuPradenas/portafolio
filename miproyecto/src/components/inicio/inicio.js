@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import React from 'react';
 import './inicio.css';
 import { library } from '@fortawesome/fontawesome-svg-core';

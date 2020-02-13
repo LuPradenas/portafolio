@@ -22,6 +22,7 @@ render(){
     <div className={styles.three}></div>
   </div>
   <div>
+  
   <React.Fragment>
 		<ul className={!this.state.menuOpen ? 'hidden' : ''} >
 			<li>
@@ -31,7 +32,9 @@ render(){
       <Link to="/trabajos">Proyectos</Link>
       </li>
 			<li>
+      <Route>
     <Link to="/sobremi">Sobre mi</Link>
+    </Route>
       </li>
 			<li>
       <Link to="/contacto">Contacto</Link>

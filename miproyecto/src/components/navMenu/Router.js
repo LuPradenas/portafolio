@@ -1,19 +1,19 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import ReactDOM from './react-dom';
+import { Switch, Route } from 'react-router-dom';
+
 import sobremi from '../inicio/secciones/Seccion/sobremi';
 import contacto from '../inicio/secciones/Seccion/contacto';
 import trabajos from '../inicio/secciones/Seccion/trabajos';
 
-const App = () => (
-  <BrowserRouter>
-    <React.Fragment>
+const AppRouter = () => (
+  <App>
+    <Switch>
       <Route path="/sobremi" component={sobremi} />
       <Route path="/contacto" component={contacto} />
       <Route path="/trabajos" component={trabajos} />
-    </React.Fragment>
-  </BrowserRouter>
+    </Switch>
+  </App>
 );
-
-ReactDOM.render(<App />, document.getElementById('root'));
+export default AppRouter;

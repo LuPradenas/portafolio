@@ -1,4 +1,5 @@
 import React from 'react';
+import AppRouter from './components/navMenu/Router';
 import Inicio from './components/inicio/inicio';
 import Menu from './components/inicio/menu/menu';
 import Arbol from './components/inicio/arbol/arbol';
@@ -7,13 +8,13 @@ import About from './components/inicio/secciones/about';
 
 function App() {
   return (
-    <div>
+    <AppRouter>
       <Inicio />
       <Menu />
       <Arbol />
       <Work />
       <About />
-    </div>
+    </AppRouter>
   );
 }
 

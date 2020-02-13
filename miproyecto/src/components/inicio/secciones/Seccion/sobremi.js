@@ -1,7 +1,7 @@
 import React from 'react';
-import Menu from './components/inicio/menu/menu';
+import Menu from '../../../../components/inicio/menu/menu';
 import cesped from './imagenes/cesped.svg';
-import from './sobremi.css';
+import styles from './sobremi.css';
 
 class About extends React.Component {
   // eslint-disable-next-line class-methods-use-this

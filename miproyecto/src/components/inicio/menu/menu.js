@@ -32,9 +32,9 @@ render(){
       <Link to="/trabajos">Proyectos</Link>
       </li>
 			<li>
-      <Route>
+    
     <Link to="/sobremi">Sobre mi</Link>
-    </Route>
+  
       </li>
 			<li>
       <Link to="/contacto">Contacto</Link>

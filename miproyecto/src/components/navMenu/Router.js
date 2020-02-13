@@ -4,9 +4,9 @@ import React from 'react';
 import { Switch, Route, Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import sobremi from '../inicio/secciones/Seccion/sobremi';
-import contacto from '../inicio/secciones/Seccion/contacto';
-import trabajos from '../inicio/secciones/Seccion/trabajos';
+import sobremi from '../secciones/Seccion/sobremi';
+import contacto from '../secciones/Seccion/contacto';
+import trabajos from '../secciones/Seccion/trabajos';
 
 const history = createBrowserHistory();
 

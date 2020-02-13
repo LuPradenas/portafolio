@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import React from 'react';
-import './inicio.css';
+import './inicio.modules.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

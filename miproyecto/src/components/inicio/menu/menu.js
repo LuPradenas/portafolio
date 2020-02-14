@@ -1,10 +1,10 @@
 import React from 'react';
-import  styles from './menu.modules.scss';
+import  styles from './menu.module.scss';
 import { Link ,Route } from 'react-router-dom';
 
 
 class Menu extends React.Component {
-  state = {menuOpen: false};
+ state = {menuOpen: false};
   toggleClass =() => {
     const menuSeccionOpenValue = ! this.state.menuOpen;
     this.setState({menuOpen:menuSeccionOpenValue
@@ -15,32 +15,33 @@ render(){
 
   return (
   <header>
-<div className="menu-section" onClick={this.toggleClass}>
-  <div className="menu-toggle " onClick={this.toggleClass} >
-    <div className={styles.one}></div>
-    <div className={styles.two}></div>
-    <div className={styles.three}></div>
+<div className={this.state.menuOpen ? styles.menuOpen : styles.menu} onClick={this.toggleClass}>
+  <div className={styles.toggle} onClick={this.toggleClass} >
+    <div className={!this.state.menuOpen ? `${styles.one} ${styles.toggle} ` : styles.one}></div>
+    <div className={!this.state.menuOpen ? `${styles.barrados} ${styles.toggle}   ` : styles.two}></div>
+    <div className={!this.state.menuOpen ? `${styles.barratres} ${styles.toggle}  ` : styles.three}></div>
   </div>
   <div>
   
-  <React.Fragment>
-		<ul className={!this.state.menuOpen ? 'hidden' : ''} >
+  <nav>
+
+		<ul className={!this.state.menuOpen ? `${styles.hidden} ${styles.ul}` : styles.ul} >
 			<li>
-      <Link to="/inicio">Inicio</Link>
+      <Link className={styles.link} to="/inicio">Inicio</Link>
       </li>
       <li>
-      <Link to="/trabajos">Proyectos</Link>
+      <Link className={styles.link}to="/trabajos">Proyectos</Link>
       </li>
 			<li>
     
-    <Link to="/sobremi">Sobre mi</Link>
+    <Link className={styles.link} to="/sobremi">Sobre mi</Link>
   
       </li>
 			<li>
-      <Link to="/contacto">Contacto</Link>
+      <Link className={styles.link} to="/contacto">Contacto</Link>
       </li>
 		</ul>
-    </React.Fragment>
+    </nav>
 	</div>
 </div>
 </header>

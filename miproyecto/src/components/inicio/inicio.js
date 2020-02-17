@@ -5,6 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Arbol from './arbol/arbol';
+
 library.add(faAngleDoubleDown);
 
 class Inicio extends React.Component {
@@ -23,15 +25,18 @@ class Inicio extends React.Component {
 
   render() {
     return (
-      <div id="page-wrap">
-        <div className="screen-wrap">
-          <div className="content-wrap">
-            <h1>Luciana Pradenas</h1>
-            <p>Developer front end</p>
+      <>
+        <div id="page-wrap">
+          <div className="screen-wrap">
+            <div className="content-wrap">
+              <h1>Luciana Pradenas</h1>
+              <p>Developer front end</p>
+            </div>
+            <FontAwesomeIcon icon={faAngleDoubleDown} onClick={() => this.scroll(this.secondDiv)} />
           </div>
-          <FontAwesomeIcon icon={faAngleDoubleDown} onClick={() => this.scroll(this.secondDiv)} />
+          <Arbol />
         </div>
-      </div>
+      </>
     );
   }
 }

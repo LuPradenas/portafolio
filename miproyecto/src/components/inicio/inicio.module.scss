@@ -15,12 +15,12 @@ body {
   margin: 0;
 }
 
-#page-wrap {
+#pagewrap {
   color: #fff;
   overflow: auto;
 }
 
-.screen-wrap {
+.screenwrap {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -29,19 +29,19 @@ body {
   align-items: center;
 }
 
-.screen-wrap svg {
+.screenwrap svg {
   margin-bottom: 2rem;
   opacity: 0.5;
   transition: opacity 0.2s;
 }
 
-.screen-wrap svg:hover {
+.screenwrap svg:hover {
   opacity: 1;
   transition: opacity 0.2s;
   cursor: pointer;
 }
 
-.content-wrap {
+.contentwrap {
   margin-top: 25vh;
   height: 50vh;
   width: 100%;
@@ -61,7 +61,7 @@ div.content {
   align-items: center;
 }
 
-h1 {
+.titulo {
   font-family: Sacramento, cursive;
   font-weight: 300;
   font-size: 4rem;
@@ -69,7 +69,7 @@ h1 {
   color: #fff;
 }
   
-  p{
+  .parrafo{
     font-family: Sacramento, cursive;
     font-weight: 300;
     font-size: 3rem;

@@ -1,10 +1,8 @@
 import React from "react";
 import styles from "./menu.module.scss";
 import { Link } from "react-router-dom";
-
 class Menu extends React.Component {
   state = { menuOpen: false };
-
   toggleClass = () => {
     const menuSeccionOpenValue = !this.state.menuOpen;
     this.setState({ menuOpen: menuSeccionOpenValue });
@@ -20,22 +18,22 @@ class Menu extends React.Component {
           <div className={styles.toggle} onClick={this.toggleClass}>
             <div
               className={
-                !this.state.menuOpen
-                  ? `${styles.one} ${styles.toggle} `
+                this.state.menuOpen
+                  ? `${styles.toggle} ${styles.one} `
                   : styles.one
               }
             ></div>
             <div
               className={
-                !this.state.menuOpen
-                  ? `${styles.barrados} ${styles.toggle}   `
+                this.state.menuOpen
+                  ? `${styles.toggle} ${styles.two}   `
                   : styles.two
               }
             ></div>
             <div
               className={
-                !this.state.menuOpen
-                  ? `${styles.barratres} ${styles.toggle}  `
+                this.state.menuOpen
+                  ? `${styles.toggle} ${styles.three}  `
                   : styles.three
               }
             ></div>
@@ -77,5 +75,4 @@ class Menu extends React.Component {
     );
   }
 }
-
 export default Menu;

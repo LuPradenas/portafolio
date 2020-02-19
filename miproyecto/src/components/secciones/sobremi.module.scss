@@ -1,0 +1,48 @@
+.card
+{
+  background: #1D5363;
+  box-shadow: 16px 8px 3px 0 rgba(0, 0, 0, 0.6);
+  padding: 2em;
+  position: relative;
+  width: 50em;
+  height: 30em;
+
+}
+.title{
+  background: #1D5363;
+}
+.paragraph{
+  background: #1D5363;
+}
+.heart {
+  bottom: 4em;
+  position: absolute;
+  right: 4em;
+}
+
+.heart::before,
+.heart::after {
+  background-color:#27868F;
+  border-radius: 50px 50px 0 0;
+  content: "";
+  height: 25px;
+  left: 15px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 15px;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.container{
+display:flex;
+justify-content: center;
+padding-block-start: 100px;
+
+}
+

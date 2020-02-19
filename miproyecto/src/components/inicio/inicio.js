@@ -1,40 +1,34 @@
 /* eslint-disable class-methods-use-this */
 import React from 'react';
-import './inicio.modules.scss';
+// import './inicio.module.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import About from '../circulos/about';
+import Work from '../circulos/work';
 import Arbol from './arbol/arbol';
+
+import styles from './inicio.module.scss';
 
 library.add(faAngleDoubleDown);
 
 class Inicio extends React.Component {
-  constructor(props) {
-    super(props);
-    this.firstDiv = React.createRef();
-    this.secondDiv = React.createRef();
-    this.thirdDiv = React.createRef();
-    this.fourthDiv = React.createRef();
-    this.scroll = this.scroll.bind(this);
-  }
-
-  scroll(ref) {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
-
   render() {
+    // eslint-disable-next-line no-console
+    console.log(styles);
     return (
       <>
         <div id="page-wrap">
-          <div className="screen-wrap">
-            <div className="content-wrap">
-              <h1>Luciana Pradenas</h1>
-              <p>Developer front end</p>
+          <div className={styles.screenwrap}>
+            <div className={styles.contentwrap}>
+              <h1 className={styles.titulo}>Luciana Pradenas</h1>
+              <p className={styles.parrafo}>Developer front end</p>
             </div>
-            <FontAwesomeIcon icon={faAngleDoubleDown} onClick={() => this.scroll(this.secondDiv)} />
+            <FontAwesomeIcon icon={faAngleDoubleDown} />
           </div>
+          <About />
           <Arbol />
+          <Work />
         </div>
       </>
     );

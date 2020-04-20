@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nanum+Pen+Script&display=swap');
+
 .card
 {
   background: #1D5363;
   box-shadow: 16px 8px 3px 0 rgba(0, 0, 0, 0.6);
   padding: 2em;
   position: relative;
-  width: 50em;
+  width: 40em;
   height: 30em;
 
 }
 .title{
+  text-decoration: underline  wavy white;
+  font-size: 45px;
+  color: white;
+  font-family: 'Nanum Pen Script', cursive;
   background: #1D5363;
 }
 .paragraph{
+  font-size: 20px;
+  line-height: 1.7;
+  color: white;
+  font-family: 'Nanum Pen Script', cursive;
   background: #1D5363;
 }
 .heart {
@@ -22,7 +32,7 @@
 
 .heart::before,
 .heart::after {
-  background-color:#27868F;
+  background-color:#21776f;
   border-radius: 50px 50px 0 0;
   content: "";
   height: 25px;
@@ -42,7 +52,7 @@
 .container{
 display:flex;
 justify-content: center;
-padding-block-start: 100px;
+padding-block-start: 15%;
 
 }
 

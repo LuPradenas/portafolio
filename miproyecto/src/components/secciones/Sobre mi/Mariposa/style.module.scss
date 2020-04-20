@@ -1,0 +1,135 @@
+$color-wing: pink;
+$color-sub-wing: lighten(pink, 10%);
+
+.container2{
+position: absolute;
+display: flex;
+top: -6%;
+left: 93%;
+}
+
+.butterfly {
+    animation: hover 250ms cubic-bezier(.48,.01,.54,1) infinite;
+    animation-direction: alternate;
+    animation-fill-mode: reverse;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(50deg) rotateY(20deg) rotateZ(-50deg) translateY(0px);
+    width: 30px;
+    
+    &::before {
+        background: darken(black,55%);
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 110px;
+        margin-left:-10px;
+        outline: 1px solid transparent;
+        position: absolute;
+        transform: rotatey(100deg);
+        width: 20px;
+        z-index: 2;
+    }
+}
+
+.wing {
+    background: #000;
+    display: block;
+    opacity: 0.7;
+    outline: 1px solid transparent;
+    position: absolute;
+    top: 0;
+    
+    &:first-child {
+        animation: leftflap 250ms cubic-bezier(.48,.01,.54,1) infinite;
+        animation-direction: alternate;
+        animation-fill-mode: reverse;
+        height: 1px;
+        left: 0;
+        transform: rotateY(-20deg);
+        transform-origin: 700% 50%;
+        width: 1px;
+        z-index: 3;
+    }
+    
+    &:last-child {
+        animation: rightflap 250ms cubic-bezier(.48,.01,.54,1) infinite;
+        animation-direction: alternate;
+        animation-fill-mode: reverse;
+        right:0;
+        transform: rotateY(200deg);
+        z-index: 1;
+    }
+    
+    .bit {
+        background: pink;
+    }
+    .bit::after {
+        background:violet;
+    }
+    
+    .bit, .bit::after {
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform-origin: 100% 50%;
+    }
+    
+    .bit:first-child {
+        height: 70px;
+        text-align: center;
+        top: 15px;
+        transform: rotateZ(40deg);
+        width: 130px;
+        
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 60px;
+            left: -30px;
+            top: 5px;
+            width: 100px;
+        }
+    }
+    
+    .bit:last-child {
+        height: 55px;
+        transform: rotateZ(-40deg);
+        width: 100px;
+        
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 45px;
+            left: -24px;
+            top: 5px;
+            width: 60px;
+            z-index:1;
+        }
+    }
+}
+
+
+@keyframes leftflap {
+    0% {
+        transform: rotateY(-20deg);
+    }
+
+    100% {
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes rightflap {
+    0% {
+        transform: rotateY(200deg);
+    }
+
+    100% {
+        transform: rotateY(90deg);
+    }
+}
+
+

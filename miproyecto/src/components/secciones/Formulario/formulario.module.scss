@@ -1,0 +1,99 @@
+.form{
+    background:#21776f; 
+}
+  /* Begin Left Contact Page */
+  .formHorizontal {
+    float: left;
+    max-width: 400px;
+    font-weight: 400;
+    background:#21776f;
+    padding-left: 5%;
+    margin-block-end: 20px;
+  }
+  
+  .formControl {
+    font-family: 'Gochi Hand', cursive;
+    width: 350px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 2px solid white;
+    resize: none;
+    background:#21776f;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-block-end: 30px;
+  }
+ .textarea{
+    font-family: 'Gochi Hand', cursive;
+    margin-block-end: 30px;
+    width: 350px;
+    height: 200px;
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 4px;
+    resize: none;
+    background: #21776f;
+    color: #fff;
+    letter-spacing: 1px;
+ } 
+  
+  .button {
+    font-family: 'Gochi Hand', cursive;
+    padding: 5px;
+    background:#21776f;
+    height: 34px;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 350px;
+    color:white;
+    cursor: pointer;
+    overflow: hidden;
+  &.button:hover {
+    background: #34B484;
+    color: white;
+  }
+}
+
+.contactContainer{
+    max-width: 400px;
+    float: right;
+    background: #21776f;
+
+}
+.contactList{
+    background: #21776f;
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+.item {
+    background: #21776f;
+    line-height: 4;
+    color: #aaa;
+  }
+  .contactText {
+    background: #21776f;
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+ .icon{
+    background: #21776f;
+     margin-inline-end: 9px;
+ }
+
+hr {
+  background: #21776f;
+  border-color: rgba(255,255,255,.8); 
+  align-items: center;
+  width: 70%;
+  margin-inline-end: 22%;
+}
+.copyright {
+  background: #21776f;
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-block-start: 63%;
+  }

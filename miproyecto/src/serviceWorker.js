@@ -1,3 +1,5 @@
+/* eslint-disable no-magic-numbers */
+/* eslint-disable no-use-before-define */
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
@@ -58,7 +60,7 @@ function registerValidSW(swUrl, config) {
     .then(registration => {
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
-        if (installingWorker == null) {
+        if (installingWorker === null) {
           return;
         }
         installingWorker.onstatechange = () => {
